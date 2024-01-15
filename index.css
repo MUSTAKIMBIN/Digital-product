@@ -1,5 +1,104 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* --shared style-- */
+.btn-primary {
+  background-color: #e02c6d;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 1.2rem;
+  font-weight: 600;
+}
+.btn-primary img {
+  color: white;
+  margin-left: 2px;
+}
+/* --header section-- */
+header {
+  max-width: 88%;
+  margin: 0 auto;
+}
+header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5em;
+}
+header .nav h2 {
+  color: #3a3a3a;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+header .nav ul {
+  display: flex;
+  gap: 1.2em;
+}
+header .nav ul li {
+  list-style: none;
+}
+header .nav u li a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+/* --banner section-- */
+.banner {
+  display: flex;
+  align-items: center;
+  padding: 3rem 0;
+  gap: 2rem;
+}
+.banner-content h2 {
+  color: #3a3a3a;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 3rem;
+  margin-bottom: 0.5em;
+}
+.banner-content p{
+  color: #3a3a3a;
+  font-size: 0.8em;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.banner-img{
+    background-image: url("images/Circle\ design.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.banner-img img{
+    width: 100%;
+}
+
+
+/* ----responsive layout---- */
+/* -- mobile -- */
+@media screen and (max-width: 576px) {
+    header .nav{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-content{
+        text-align: center;
+    }
+}
+/* -- tablet -- */
+@media screen and (min-width: 577px) and (max-width: 940px) {
+    header .nav{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-content{
+        text-align: center;
+    }
 }
